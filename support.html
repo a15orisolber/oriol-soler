@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Support - RUNETIER</title>
+    <link rel="stylesheet" href="./style/index.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#"><img src="./html_img/header.png" alt="League of Legends" title="League of Legends"></a>
+
+    </header>
+
+  <div class="navegacion">
+  <nav class="navegacion">
+    <ul class="menu">
+      <li><a href="index.html"><img src="./menu_img/index.jpeg" height="20">      Tier List</a>
+        <ul class="submenu">
+          <li><a href="http://runeforge.gg/cheat-sheet/">RuneBuilder</a></li>
+          <li><a href="https://na.leagueoflegends.com/en/news/game-updates/patch/patch-724-notes">Latest patch Notes</a></li>
+        </ul>
+      </li>
+      <li><a href="toplane.html"><img src="./menu_img/toplane.png" height="20">      Toplane</a>
+      <li><a href="jungle.html"><img src="./menu_img/jungle.png" height="20">      Jungle</a>
+      <li><a href="midlane.html"><img src="./menu_img/midlane.png" height="20">      Midlane</a>
+      <li><a href="adc.html"><img src="./menu_img/adc.png" height="20">      Ad Carry</a>
+      <li><a href="support.html"><img src="./menu_img/support.png" height="20">      Support</a>
+    </ul>
+  </nav>
+</div>
+
+    <div class="section">
+      <h3>Leona</h3>
+      <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3e/Leona_OriginalSkin.jpg/revision/latest?cb=20170621202639" alt="">
+      <p> <b>Leona is a very tanky champion</b> as she has both really good base tank stats (health, MR, armour) and she has an ability (Eclipse) which increases her armour and magic resistance for a period of time. This along with the items, runes and masteries I recommend make Leona an exceptional tank and a good addition to any team needing one!</p>
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/RV79q5HQIVk?rel=0&showinfo=0">
+</iframe>
+
+<button class="accordion">Check the runes!</button>
+<div class="panel">
+  <img class="accordion" src="./runas/leonareforged.png" alt="">
+</div>
+
+    </div>
+<br>
+    <div class="section">
+      <h3>Taric</h3>
+      <img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/d/d4/Taric_OriginalSkin.jpg/revision/latest?cb=20170616231708" alt="">
+      <p><b>Taric is one of the most versatile champions on the Rift.</b> His kit allows him to adapt to any situation whether you want to get up close and personal with your enemies or stand back and protect your allies. With an entertaining smugness and dazzling abilities, it's hard to not enjoy playing him. </p>
+</p>
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/h0IKGdWRMJQ?rel=0&showinfo=0">
+</iframe>
+
+<button class="accordion">Check the runes!</button>
+<div class="panel">
+  <img class="accordion" src="./runas/taricreforged.png" alt="">
+</div>
+    </div>
+
+<br>
+<footer>You can follow me on Twitter <img src="twitter.jpg" height="12"> and visit our page in Facebook <img src="facebook.jpg" height="20">.
+    <p>Copyright Creative Commons 2017                                                                       , Made by Oriol Soler</p>
+  </footer>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+              panel.style.display = "none";
+          } else {
+              panel.style.display = "block";
+          }
+      });
+  }
+  </script>
+
+  </body>
+</html>

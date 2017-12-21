@@ -1,0 +1,266 @@
+
+/* MENU*/
+
+    .navegacion{
+    	width: auto;
+    	margin: auto;
+    	background: #333333;
+      position: sticky;
+    }
+
+    .navegacion ul{
+    	list-style: none;
+    }
+
+    .menu > li{
+    	position: relative;
+    	display: inline-block;
+    }
+
+    .menu > li > a{
+    	display: block;
+    	padding: 15px 20px;
+    	color: white;
+    	font-family: fantasy;
+      font-size: 24px;
+    	text-decoration: none;
+    }
+
+    .menu li a:hover{
+    	color: #CE7D35;
+    	transition: all .3s;
+    }
+
+    /* Submenu*/
+
+    .submenu{
+    	position: absolute;
+    	background: #333333;
+      font-size: 22px;
+    	width: 120%;
+    	visibility: hidden;
+    	opacity: 0;
+    	transition: opacity 1.5s;
+    }
+
+    .submenu li a{
+    	display: block;
+    	padding: 15px;
+    	color: #fff;
+    	font-family: fantasy;
+    	text-decoration: none;
+    }
+
+    .menu li:hover .submenu{
+    	visibility: visible;
+    	opacity: 1;
+    }
+/*
+*/
+header {
+  top: 0;
+  position: relative;
+  width: auto;
+  min-height: 125px;
+  padding: 0px;
+  text-align: center;
+}
+header a{
+  width: auto;
+  margin: auto;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+}
+ html {
+  background-image: url(../html_img/fons.jpg);;
+ }
+body {
+
+  background-color: #189eb4;
+  width: 80%;
+  margin: auto;
+  font-family: arial;
+}
+
+#peuhead {
+  color: white;
+  text-align: center;
+
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: Blippo, fantasy;
+    background-color: #7408e0;
+    color: white;
+
+    text-align: center;
+}
+table {
+    width:50%;
+    float: center;
+
+}
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+th, td, {
+    padding: 10px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #80c7d6;
+    font-size: 18px;
+    font-style: bold;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#efefef;
+   font-size: 18px;
+   font-style: bold;
+}
+table#t01 th {
+    background-color: #7408e0;
+    color: white;
+    font-size: 28px;
+    font-family: fantasy;
+}
+
+.presentation{
+  font-family: fantasy ;
+  font-size: 20px;
+  color: #eaf2ff;
+  text-align: center;
+  background-image: url(../html_img/pres.png);
+}
+
+/*container*/
+.section
+{
+  width: 80%;
+  margin: auto;
+  background-color: #314189;
+  border: 15px solid #333333;
+  padding: 15px;
+  overflow: auto;
+}
+.section img{
+  float:left;
+  max-width: 35%;
+  height: auto;
+  padding: 15px;
+  background-color: #333333;
+  border: 15px solid #0d80a3;
+  margin: 10px;
+}
+.section p{
+  text-align: justify;
+
+}
+.section h1, h2, h3{
+  text-align: center;
+  color: #efefef;
+  font-family: fantasy;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.section h3 {
+  font-size: 28px
+}
+.section iframe {
+  float: right;
+  width: 45%;
+  padding: 15px;
+  background-color: #333333;
+  border: 15px solid #0d80a3;
+  margin: 10px;
+
+}
+
+.section ul > li {
+  text-decoration: none;
+  font-size: 18px;
+  color: #efefef;
+}
+.section p{
+  font-size: 18px;
+  color: #efefef;
+
+}
+
+a:link {
+    color: #bfb003;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #9b9229;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+
+/* desplegable */
+.accordion {
+    background-color: #0d80a3;
+    color: #efefef;
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+.panel img{
+  float:left;
+  max-width: 90%;
+  height: auto;
+  padding: 15px;
+  background-color: #333333;
+  border: 15px solid #0d80a3;
+  margin: auto;
+}
+
+.section img:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
